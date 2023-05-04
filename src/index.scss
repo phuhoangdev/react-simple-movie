@@ -6,7 +6,7 @@
    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
    body {
-      @apply bg-slate-900 font-body px-5;
+      @apply bg-slate-900 font-body px-5 text-white;
    }
 }
 @layer components {
@@ -17,5 +17,10 @@
 
    .movie-list .swiper-slide {
       width: 300px;
+      height: auto;
+   }
+
+   .banner .swiper {
+      height: 100%;
    }
 }
