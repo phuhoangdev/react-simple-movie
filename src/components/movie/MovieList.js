@@ -1,7 +1,7 @@
 import { SwiperSlide, Swiper } from "swiper/react";
 import MovieCard from "./MovieCard";
 import useSWR from "swr";
-import { fetcher, tmdbAPI } from "../../config";
+import { fetcher, tmdbAPI } from "apiConfig/config";
 
 // https://api.themoviedb.org/3/movie/now_playing?api_key=33aec3e46513194f2d716e9b0bc14bf5
 
