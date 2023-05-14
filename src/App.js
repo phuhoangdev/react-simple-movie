@@ -6,7 +6,7 @@ import Banner from "./components/banner/Banner";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const MovieDetailsPage = lazy(() => import("./pages/MovieDetailsPage"));
-const MoviePage = lazy(() => import("./pages/MoviePage"));
+const MoviePageInfinite = lazy(() => import("./pages/MoviePageInfinite"));
 
 const App = () => {
      return (
@@ -27,7 +27,7 @@ const App = () => {
                                    path="/movies"
                                    element={
                                         <>
-                                             <MoviePage />
+                                             <MoviePageInfinite />
                                         </>
                                    }
                               />
@@ -39,6 +39,7 @@ const App = () => {
                                         </>
                                    }
                               />
+                              <Route path="*" element={<>Not Found</>}></Route>
                          </Route>
                     </Routes>
                </Suspense>
